@@ -1,0 +1,27 @@
+{
+  "name": "firstblock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gustavo-Hilario/gutenberg-firstblock.git"
+  },
+  "author": "Gustavo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gustavo-Hilario/gutenberg-firstblock/issues"
+  },
+  "homepage": "https://github.com/Gustavo-Hilario/gutenberg-firstblock#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^26.9.0"
+  },
+  "dependencies": {
+    "@wordpress/blocks": "^12.15.0"
+  }
+}
