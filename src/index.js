@@ -1,6 +1,9 @@
 // This will import the registerBlockType function from the @wordpress/blocks package,
 import { registerBlockType } from "@wordpress/blocks";
 
+import Save from "./save";
+import Edit from "./edit";
+
 // Registering a block
 registerBlockType("blocks/firstblock", {
     title: "First block",
@@ -9,20 +12,8 @@ registerBlockType("blocks/firstblock", {
     icon: "format-status",
 
     // The edit and save functions are now using JSX
-    edit: function () {
-        return (
-            <h1 className="first-block">
-                Hello World, Step 1 (from the editor)
-            </h1>
-        );
-    },
-    save: function () {
-        return (
-            <h1 className="first-block">
-                Hello World, Step 1 (from the front end)
-            </h1>
-        );
-    },
+    edit: Edit,
+    save: Save,
 });
 
 // We need to compile the code to JavaScript using the following command:
